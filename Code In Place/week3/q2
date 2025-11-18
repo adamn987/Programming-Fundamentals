@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    float temperature;
+    printf("enter temperature in celsius: ");
+    scanf("%f", &temperature);
+    if (temperature > 30){
+		printf("weather is Hot\n");}
+        else if	
+			(printf("weather is cold"))
