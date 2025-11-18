@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) {
+    char letter;
+    printf("enter a character: ");
+    scanf("%c", &letter);
+    if (letter >= 'A' && letter <= 'Z') {
+        printf("letter is uppercase\n");
+    } else if (letter >= 'a' && letter <= 'z') {
+        printf("letter is lowercase\n");
+    } else if (letter >= '0' && letter <= '9') {
+        printf("you have enterd a digit\n");
+    } else {
+        printf("this is a special character\n");
+    }
+}
+//Checking if letter entered is lowercase,uppercase,digit or a special character
