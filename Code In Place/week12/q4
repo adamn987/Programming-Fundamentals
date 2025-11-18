@@ -1,0 +1,14 @@
+#include <stdio.h>
+void printChar(char *chPtr) {
+    if (chPtr != NULL) { 
+        printf("The character is: %c\n", *chPtr);
+    } else {
+        printf("Pointer is NULL.\n");
+    }
+}
+int main() {
+    char myChar = 'A';
+    char *ptr = &myChar;
+    printChar(ptr); 
+    return 0;
+}
