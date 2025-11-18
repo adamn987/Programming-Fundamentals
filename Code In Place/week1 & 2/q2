@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main()
+{
+	printf("name:\t Muhammad Adam\n  Age:\t21\n Course:\t BSCS");
+	return 0;
+	}
