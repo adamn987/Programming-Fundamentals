@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+	int x , y, sum, sub, div, multiply, remain;
+	char op;
+	printf("enter number 1: ");
+	scanf("%d", &x);
+	
+	printf("enter number 2: ");
+	scanf("%d", &y);	
+	
+	printf("enter operator (+ , -, *, /, %): ");
+	scanf(" %c", &op);
+	
+	switch(op)
+	{
+		case '+':
+			sum = x + y;
+			printf("answer: %d",sum);
+			break;
+		case '-':
+			sub = x - y;
+			printf("answer: %d",sub);			
+			break;
+		case '/':
+		    div = x / y;
+			printf("answer: %d",div);		    
+			break;
+		case '*':
+		    multiply = x * y;
+			printf("answer: %d",multiply);		    
+			break;
+		case '%':
+		   if (y != 0)
+		   {
+		   	 remain = x % y;
+			printf("answer: %d",remain);
+		   }		    
+			break;
+		default: printf("invalid operator.");	
+	}	
