@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+    float numerator, denominator, result;
+    printf("enter numerator: ");
+    scanf("%f", &numerator);
+    printf("enter denominator: ");
+    scanf("%f", &denominator);
+    if (denominator == 0) {
+        printf("ERROR! you cannot divide a number with zero \n");}
+     else {
+        result = numerator / denominator;
+        printf("Result: %f / %f = %f\n", numerator, denominator, result);}
+}
