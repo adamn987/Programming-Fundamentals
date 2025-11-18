@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main(){
+	
+	int num1, num2;
+	printf("enter program:\n1.computer science\n2.electrical engineering\n");
+	scanf("%d", &num1);
+	
+	switch(num1)
+	{
+		case 1:
+			printf("1. first year\n2. second year\n");
+			scanf("%d", &num2);
+			switch(num2)
+			{
+				case 1:
+                    printf("courses:\n1. ITFA\n2.programming fundamentals\n3. sslamiat");
+				    break;
+				case 2:
+					printf("courses:\n1. calculus\n2. data structures\n3. ICP");
+				    break;
+				default: printf("invalid.");
+			}
+			break;
+									
+		case 2:
+			printf("1. first Year\n2. second Year\n");
+			scanf("%d", &num2);
+			switch(num2)
+			{
+				case 1:
+					printf("courses:\n1.ITFA\2.basic electrical engineering\n3.calculus");
+				    break;
+				case 2:
+					printf("courses:\n1. multi variable calculus\n2. electronic devices and circuits\n3. data structures");
+			        break;
+				default: printf("invalid.");			
+		    }
+		    break; 
+		default: printf("invalid.");
+	}
+}
