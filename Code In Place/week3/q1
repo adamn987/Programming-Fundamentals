@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = (celsius * 9/5) + 32;
+    printf("%f = %f\n", celsius, fahrenheit);
+}
+
+
+//for 100 we get  212.000000 , for 0  we get 32 and for -40 we get -40
