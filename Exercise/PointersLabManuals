@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	long value1 = 200000;
+	long value2;
+	long *lPtr; 
+	lPtr = &value1; 
+	printf("%p\n", &value1); 
+	value2 = *lPtr; 
+	printf("value2: %d\n", value2); 
+	printf("Address of value1: %p\n", &value1);
+	printf("Address stored in lPtr: %p", lPtr); 
+}
